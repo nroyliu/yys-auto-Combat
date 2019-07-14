@@ -54,6 +54,7 @@ if __name__ == '__main__':
                 x = isStart['result'][0]
                 y = isStart['result'][1]
                 os.system("cd platform-tools && adb shell input tap "+str(x)+" "+str(y))
+            time.sleep(2)
         elif(isWin):
             print("战斗胜利")
             os.system("cd platform-tools && adb shell input tap 200 350")
@@ -69,6 +70,7 @@ if __name__ == '__main__':
                 x = accept['result'][0]
                 y = accept['result'][1]
                 os.system("cd platform-tools && adb shell input tap " + str(x) + " " + str(y))
+            time.sleep(1)
 
         elif(isDamo):
             print("奖励未打开")
