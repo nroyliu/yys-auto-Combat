@@ -28,9 +28,8 @@ if __name__ == '__main__':
         isDamo = findImg("screencap/screencap.png", "images/damo.png")
         isOpenDamo = findImg("screencap/screencap.png", "images/opendamo.png")
         if(isRoom):
-            print("在房间内")
             isRoomCount = findImg("screencap/screencap.png","images/invite.png","true")
-            print("房间"+str(3-len(isRoomCount))+"人")
+            print("房间内"+str(3-len(isRoomCount))+"人")
             if((3-len(isRoomCount))>1):
                 print("倒计时3秒开始")
                 print("======>"+str(3))
